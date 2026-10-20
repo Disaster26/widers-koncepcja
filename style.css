@@ -232,13 +232,13 @@ h1,h2,h3{font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;line-h
   .gora .wrap{height:66px}
   .logo img{height:46px}
   .logo span{font-size:13px}
-  .hero .wrap{padding:40px 0 48px}
+  .hero .wrap{padding:28px 0 44px}
   .hero::before{background:linear-gradient(180deg,rgba(22,25,28,.82) 0%,rgba(22,25,28,.9) 100%)}
   .hero h1{font-size:clamp(38px,11vw,50px);margin-top:14px}
   .hero .lead{font-size:16.5px;margin-top:14px}
-  .hero-cta{margin-top:22px}
+  .hero-cta{margin-top:20px}
   .hero-cta .btn{flex:1 1 100%}
-  .spec{margin-top:28px}
+  .spec{margin-top:22px}
   .spec div{padding:11px 10px}
   .spec b{font-size:17px;line-height:1.1}
   .spec span{font-size:10.5px}
