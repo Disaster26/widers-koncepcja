@@ -60,3 +60,10 @@
   });
   const b=L.featureGroup(Object.values(pkt)); mapa.fitBounds(b.getBounds(),{padding:[30,30]});
 })();
+
+/* dolny pasek na telefonie dopiero po przewinieciu za przyciski z naglowka (bez dublowania na 1. ekranie) */
+(function(){
+  const m=document.querySelector('.mob'), t=document.querySelector('.hero-cta')||document.querySelector('.art-tlo');
+  if(!m)return; if(!t||!('IntersectionObserver' in window)){m.classList.add('widac');return}
+  new IntersectionObserver(w=>w.forEach(x=>m.classList.toggle('widac',!x.isIntersecting&&x.boundingClientRect.top<0)),{threshold:0}).observe(t);
+})();
